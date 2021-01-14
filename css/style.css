@@ -1,0 +1,35 @@
+body {background-color: #7bcea5;}
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: 'Courier New', Courier, monospace;}
+
+.conteiner{display: flex; margin: auto;}
+
+.rtable{width: 100%; text-align: center;}
+	.rtable thead{background: #000; font-weight: bold; color: #fff;}
+	.rtable tbody tr:nth-child(2n){background: #ccc}
+	.rtable th , .rtable td{padding: 7px 0;}
+
+#read {display: flex;}
+button {width: 17%; height: 40px; margin-left: 3%; background-color: rgb(50, 175, 50); border: none; border-radius: 9px;} 
+.btn {margin-left: 10%; border: none; border-radius: 8px; text-decoration: none;}
+#edit {background-color: rgb(37, 134, 179);}
+#del {background-color: crimson;}
+
+@media screen and (max-width: 600px){
+	.conteiner{width: 94%;}
+
+	.rtable thead{display: none;}
+	.rtable tbody td{display: flex; flex-direction: column;}
+}
+
+
+@media only screen and (min-width: 601px){
+	.conteiner{width: 70%}
+
+	.func_btn{display: flex;}
+	.btn{width: 100%; padding: 3%;}
+
+	.rtable tbody tr td:nth-child(1){width: 15%;}
+	.rtable tbody tr td:nth-child(2){width: 10%;}
+	.rtable tbody tr td:nth-child(3){width: 30%;}
+	
+}

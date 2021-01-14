@@ -1,0 +1,15 @@
+*{margin: 0; padding: 0; font-family: 'Courier New', Courier, monospace; text-align: center;}
+body{background-color: #7bcea5;}
+
+h2 {margin-top: 10%;}
+main {margin-top: 4%;}
+#btn {width: 30%;}
+main button {width: 30%;}
+
+@media screen and (min-width: 601px){
+
+    .create {width: 28%; height: 30px;}
+
+    #btn {width: 14%;}
+    main button {width: 14%;}
+}
